@@ -1,0 +1,15 @@
+{
+  "title": "JIS-to-ISO-for-Macbook-Pro-testing"
+  "rules": [
+    {
+      "description": "Change Shift + 2 to at symbol",
+      "manipulators": [
+      {
+        "type":"basic",
+        "from": <%= from ("2",[],["shift"])%>,
+        "to": <%= to([["JIS_ATMARK"]])
+      }
+      ]
+    }
+  ]
+}
